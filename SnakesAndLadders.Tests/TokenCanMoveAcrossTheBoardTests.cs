@@ -30,7 +30,7 @@ namespace SnakesAndLadders.Tests
         }
 
         [Test]
-        public void WhenTheTokenIsMoved3SpacesThenFourSpaces()
+        public void WhenTheTokenIsMovedThreeSpacesThenFourSpaces()
         {
             _game.MoveToken(3);
             _game.MoveToken(4);

@@ -27,3 +27,7 @@ There are a number of candidate objects in the description:
 ## Notes
 
 I'd like to experiment with events on the Snakes and ladders classes - these could "detect" a collision and tell the game to move the token. Overkill here - but could be interesting.
+
+The Snakes and ladders feel quite basic data objects, it would be interesting to explore the interactions. However the tests pass and the trivial code is easy to understand and work with.
+
+I'm not a fan of the Game class and would watch closely how it develops. The snakes and ladders (and dice?) could be passed in the ctor (DI) and the null object dodge for the snake and ladder in the ctor is a smell.

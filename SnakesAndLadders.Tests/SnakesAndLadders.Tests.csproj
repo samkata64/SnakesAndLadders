@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="MovesAreDeterminedByDiceRollsTests.cs" />
     <Compile Include="PlayerCanWinTheGameTests.cs" />
+    <Compile Include="SnakesGoDownNotUpTests.cs" />
     <Compile Include="TokenCanMoveAcrossTheBoardTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

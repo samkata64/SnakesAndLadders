@@ -5,34 +5,36 @@ namespace SnakesAndLadders.Tests
     [TestFixture]
     public class TokenCanMoveAcrossTheBoardTests
     {
-        [Test]
-        public void WhenTheTokenIsPlacedOnTheBoardTheTokenIsAtSquareOne()
+        private Game _game;
+        private Token _token;
+
+        [SetUp]
+        public void GivenAGameWithATokenAdded()
         {
-            var game = new Game();
-            var token = new Token();
-            game.Add(token);
-            Assert.That(token.Location(), Is.EqualTo(1));
+            _game = new Game();
+            _token = new Token();
+            _game.Add(_token);
         }
 
         [Test]
-        public void WhenTheTokenIsOnSquareOneAndMoved3Spaces()
+        public void ThenTheTokenStartsAtSquareOne()
         {
-            var game = new Game();
-            var token = new Token();
-            game.Add(token);
-            game.MoveToken(3);
-            Assert.That(token.Location(), Is.EqualTo(4));
+            Assert.That(_token.Location(), Is.EqualTo(1));
         }
 
         [Test]
-        public void WhenTheTokenIsOnSquareOneAndMoved3SpacesThenFourSpaces()
+        public void WhenTheTokenIsMoved3Spaces()
         {
-            var game = new Game();
-            var token = new Token();
-            game.Add(token);
-            game.MoveToken(3);
-            game.MoveToken(4);
-            Assert.That(token.Location(), Is.EqualTo(8));
+            _game.MoveToken(3);
+            Assert.That(_token.Location(), Is.EqualTo(4));
+        }
+
+        [Test]
+        public void WhenTheTokenIsMoved3SpacesThenFourSpaces()
+        {
+            _game.MoveToken(3);
+            _game.MoveToken(4);
+            Assert.That(_token.Location(), Is.EqualTo(8));
         }
     }
 }

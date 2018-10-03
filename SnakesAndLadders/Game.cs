@@ -8,10 +8,12 @@ namespace SnakesAndLadders
 
         private Token _token;
         private Snake _snake;
+        private Ladder _ladder;
 
         public Game()
         {
             _snake = new Snake(0, 0);
+            _ladder = new Ladder(0, 0);
         }
 
         public void Add(Token token)
@@ -30,6 +32,10 @@ namespace SnakesAndLadders
             {
                 _token.Move(_snake.Reduction());
             }
+            else if(_token.Location() == _ladder.Bottom)
+            {
+                _token.Move(_ladder.Increase());
+            }
         }
 
         public void Add(Snake snake)
@@ -40,6 +46,11 @@ namespace SnakesAndLadders
         public bool IsWon()
         {
             return (_token.Location() == FinalSquare);
+        }
+
+        public void Add(Ladder ladder)
+        {
+            _ladder = ladder;
         }
     }
 }

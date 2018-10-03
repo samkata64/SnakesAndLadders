@@ -37,6 +37,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LaddersGoUpNotDownTests.cs" />
     <Compile Include="MovesAreDeterminedByDiceRollsTests.cs" />
     <Compile Include="PlayerCanWinTheGameTests.cs" />
     <Compile Include="SnakesGoDownNotUpTests.cs" />

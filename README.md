@@ -19,3 +19,5 @@ There are a number of candidate objects in the description:
 * Board
 * Game
 * Dice
+
+* After the first test and commits I'm wondering what role the game plays. It's mentioned with interactions. I'll leave it for now and come back to it. 

@@ -5,8 +5,8 @@ namespace SnakesAndLadders.Tests
     [TestFixture]
     public class PlayerCanWinTheGameTests
     {
-        protected internal Game _game;
-        protected internal Token _token;
+        private Game _game;
+        private Token _token;
 
         [SetUp]
         public void GivenAGameWithATokenOnSquareNinetySeven()

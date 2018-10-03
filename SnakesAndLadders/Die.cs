@@ -2,7 +2,12 @@
 
 namespace SnakesAndLadders
 {
-    public class Die
+    public interface IRollable
+    {
+        int Roll();
+    }
+
+    public class Die : IRollable
     {
         public int Roll()
         {

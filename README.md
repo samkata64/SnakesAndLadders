@@ -7,6 +7,14 @@ Kata taken from http://agilekatas.co.uk/katas/snakesandladders-kata
 * Visual Studio 2017 Community Edition
 * C# (Net Framework 4.7)
 * Nunit 3
+* Resharper
+
+### Running
+1. Download the zip and extract
+1. Open the solution
+1. Build -> Rebuild Solution
+1. Resharper ( ```ctrl+u, ctrl+l``` ) to run all the tests.
+1. Critique :)
 
 ## Narrative
 The following notes are a _stream of consciousness_ !

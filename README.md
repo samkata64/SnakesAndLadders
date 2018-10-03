@@ -2,7 +2,7 @@
 
 Kata taken from http://agilekatas.co.uk/katas/snakesandladders-kata
 
-## Prerequites / Setup
+## Prerequisites / Setup
 
 * Visual Studio 2017 Community Edition
 * C# (Net Framework 4.7)

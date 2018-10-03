@@ -17,5 +17,17 @@ namespace SnakesAndLadders.Tests
             Assert.That(_token.Location(), Is.EqualTo(100));
             Assert.That(_game.IsWon(), Is.True);
         }
+
+        [Test]
+        public void GivenTheTokenIsOnSquareNinetySevenWhenTheTokenIsMovedThreeSpacesThenTheTokenStaysStill()
+        {
+            var _game = new Game();
+            var _token = new Token();
+            _game.Add(_token);
+            _game.MoveToken(96);
+
+            _game.MoveToken(4);
+            Assert.That(_token.Location(), Is.EqualTo(97));
+        }
     }
 }

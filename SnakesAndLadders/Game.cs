@@ -11,7 +11,10 @@
 
         public void MoveToken(int spaces)
         {
-            _token.Move(spaces);
+            if (_token.Location() + spaces <= 100)
+            {
+                _token.Move(spaces);
+            }
         }
 
         public bool IsWon()

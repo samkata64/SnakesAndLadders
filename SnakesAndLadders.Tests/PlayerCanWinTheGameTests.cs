@@ -28,6 +28,7 @@ namespace SnakesAndLadders.Tests
 
             _game.MoveToken(4);
             Assert.That(_token.Location(), Is.EqualTo(97));
+            Assert.That(_game.IsWon(), Is.False);
         }
     }
 }

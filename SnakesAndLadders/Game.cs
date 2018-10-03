@@ -19,7 +19,7 @@
 
         public bool IsWon()
         {
-            return true;
+            return (_token.Location() == 100);
         }
     }
 }

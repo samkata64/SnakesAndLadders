@@ -18,7 +18,7 @@ namespace SnakesAndLadders.Tests
         }
 
         [Test]
-        public void WhenTheTokenLandsOnTwelveThenTheTokenEndsOnTwo()
+        public void WhenTheTokenLandsOnSquareTwelveThenTheTokenEndsOnSquareTwo()
         {
             _game.MoveToken(6);
             _game.MoveToken(5);
@@ -27,7 +27,7 @@ namespace SnakesAndLadders.Tests
         }
 
         [Test]
-        public void WhenTheTokenIsOnSquareTwoItStaysOnSquareTwo()
+        public void WhenTheTokenLandsOnSquareTwoItStaysOnSquareTwo()
         {
             _game.MoveToken(1);
             Assert.That(_token.Location(), Is.EqualTo(2));

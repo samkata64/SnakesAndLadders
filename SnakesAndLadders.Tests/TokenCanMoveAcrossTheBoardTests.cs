@@ -14,19 +14,4 @@ namespace SnakesAndLadders.Tests
             Assert.That(token.Location(), Is.EqualTo(1));
         }
     }
-
-    public class Token
-    {
-        public int Location()
-        {
-            return 1;
-        }
-    }
-
-    public class Game
-    {
-        public void Add(Token token)
-        {
-        }
-    }
 }

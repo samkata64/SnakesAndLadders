@@ -21,6 +21,16 @@ namespace SnakesAndLadders
             _token = token;
         }
 
+        public void Add(Ladder ladder)
+        {
+            _ladder = ladder;
+        }
+
+        public void Add(Snake snake)
+        {
+            _snake = snake;
+        }
+
         public void MoveToken(int spaces)
         {
             if (_token.Location() + spaces <= FinalSquare)
@@ -38,19 +48,9 @@ namespace SnakesAndLadders
             }
         }
 
-        public void Add(Snake snake)
-        {
-            _snake = snake;
-        }
-
         public bool IsWon()
         {
             return (_token.Location() == FinalSquare);
-        }
-
-        public void Add(Ladder ladder)
-        {
-            _ladder = ladder;
-        }
+        } 
     }
 }

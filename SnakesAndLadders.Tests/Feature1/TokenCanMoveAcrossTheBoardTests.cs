@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace SnakesAndLadders.Tests
+namespace SnakesAndLadders.Tests.Feature1
 {
     [TestFixture]
     public class TokenCanMoveAcrossTheBoardTests

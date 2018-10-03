@@ -37,11 +37,11 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LaddersGoUpNotDownTests.cs" />
-    <Compile Include="MovesAreDeterminedByDiceRollsTests.cs" />
-    <Compile Include="PlayerCanWinTheGameTests.cs" />
-    <Compile Include="SnakesGoDownNotUpTests.cs" />
-    <Compile Include="TokenCanMoveAcrossTheBoardTests.cs" />
+    <Compile Include="Feature2\LaddersGoUpNotDownTests.cs" />
+    <Compile Include="Feature1\MovesAreDeterminedByDiceRollsTests.cs" />
+    <Compile Include="Feature1\PlayerCanWinTheGameTests.cs" />
+    <Compile Include="Feature2\SnakesGoDownNotUpTests.cs" />
+    <Compile Include="Feature1\TokenCanMoveAcrossTheBoardTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

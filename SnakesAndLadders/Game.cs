@@ -13,5 +13,10 @@
         {
             _token.Move(spaces);
         }
+
+        public bool IsWon()
+        {
+            return true;
+        }
     }
 }

@@ -20,4 +20,5 @@ There are a number of candidate objects in the description:
 * Game
 * Dice
 
-* After the first test and commits I'm wondering what role the game plays. It's mentioned with interactions. I'll leave it for now and come back to it. 
+* After the first test and commits I'm wondering what role the game plays. It's mentioned with interactions. I'll leave it for now and come back to it.
+* The game is now used - I see it as the natural place for 'rules' to belong. (I'm listening to the tests)
